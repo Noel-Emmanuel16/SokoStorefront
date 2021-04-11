@@ -1,0 +1,24 @@
+.left-sidebar {
+  border-right: 1px solid #dfdfdf;
+  /* flex: 0 1 auto;
+  width: 100%; */
+  min-height: 100%;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  order: -1;
+  position: fixed;
+  width: 20%;
+  left: 0px;
+}
+
+.right-sidebar {
+  border-left: 1px solid #dfdfdf;
+  padding: 1.5rem;
+  min-height: 100%;
+  flex: 0 1 auto;
+  order: 2;
+  right: 0;
+  width: 20%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}

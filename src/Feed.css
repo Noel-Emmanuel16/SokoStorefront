@@ -1,0 +1,13 @@
+.feed {
+  overflow-y: scroll;
+  min-height: auto;
+  /* flex: 0 1 auto; */
+  order: 1;
+  width: 50%;
+  left: 20%;
+  position: absolute;
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}

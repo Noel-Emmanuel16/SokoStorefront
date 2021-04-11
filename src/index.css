@@ -1,13 +1,195 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* color: #3e4854; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --bg-color: #2766cc;
+  --border: 1px solid #dfdfdf;
+  font-size: 62.5%;
+  --color: #e8f5fe;
+}
+
+.App {
+  max-width: 100%;
+  min-height: 100vh;
+  font-size: 1.6rem !important;
+  position: relative;
+}
+
+.home {
+  display: block;
+  align-items: stretch;
+  position: relative;
+  margin-top: 13rem;
+}
+
+.home-container {
+  width: 100%;
+  position: relative;
+}
+
+.static-navbar {
+  width: 100%;
+  height: 5vh;
+  padding: 1.5rem 10rem;
+  background-color: var(--bg-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  z-index: 3000;
+  position: fixed;
+  top: 0;
+}
+
+.navbar {
+  top: 0;
+  margin-top: 4rem;
+  width: 100%;
+  min-height: 10vh;
+  padding: 1.5rem 3rem;
+  color: #3e4854;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: var(--border);
+  z-index: 3000;
+  position: fixed;
+  backdrop-filter: blur(16px);
+}
+
+.nav-icons {
+  width: auto;
+  flex: 0.25;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-icon {
+  width: auto;
+  height: 30px !important;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.nav-icon:hover {
+  background-color: #e8f5fe;
+  color: var(--bg-color);
+  filter: brightness(1.2);
+}
+
+.profile {
+  flex: 1;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.banner {
+  font-size: 3rem;
+  width: 5.5%;
+  height: 60px;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ebebeb;
+  margin-right: 1rem;
+}
+
+.heading-one {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.location {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  padding: 0rem 3rem;
+  font-size: 1.8rem;
+  align-items: center;
+  color: #3e4854;
+  font-weight: 600;
+}
+
+.one{
+  margin-top: 6rem;
+}
+
+.num {
+  margin-left: 1rem;
+  width: auto;
+  height: auto;
+  background-color: var(--bg-color);
+  color: #fff;
+  font-weight: 400;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.bottom {
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.tagline{
+  margin: 1rem 3rem;
+}
+
+.tagline > div:nth-child(1) {
+  color: #fff;
+  background-color: yellow !important;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.bag{
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  color: #3e4854;
+}
+
+.bag > div{
+   font-size: 10rem;
+   z-index: 3;
+}
+
+.bag > h2{
+   font-size: 1.8rem;
+   font-weight: 600;
+   margin-top: 2rem;
+}
+
+.bag > p{
+   font-size: 1.4rem;
+   font-weight: 400;
+   margin-top: 2rem;
 }
