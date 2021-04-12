@@ -1,53 +1,53 @@
-.card{
-    color: #3e4854;
-    padding: 0rem 3rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
+.card {
+  color: #3e4854;
+  padding: 0rem 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 
-.card-title{
-    display: flex;
-    align-items: center;
+.card-title {
+  display: flex;
+  align-items: center;
 }
 
-img{
-    width: 100px;
-    height: 100px;
-    padding: 0.5rem 1rem;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    margin-right: 1rem;
-    object-fit: contain;
+.card img {
+  width: 100px;
+  height: 100px;
+  padding: 0.5rem 1rem;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  margin-right: 1rem;
+  object-fit: contain;
 }
 
-h2{
-    font-size: 1.6rem;
-    font-weight: 500;
+h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
-p{
-    font-size: 1.4rem;
-    font-weight: 400;
+p {
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
-.card-btn{
-    padding: 0.3rem 1.5rem;
-    font-size: 1.6rem;
-    border: none;
-    outline: none;
-    border: 2px solid var(--bg-color);
-    border-radius: 5px;
-    background-color: transparent;
-    color: var(--bg-color);
-    cursor: pointer;
-    transition: all 300ms ease;
+.card-btn {
+  padding: 0.3rem 1.5rem;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  border: 2px solid var(--bg-color);
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--bg-color);
+  cursor: pointer;
+  transition: all 300ms ease;
 }
 
-.card-btn:hover{
-    background-color:var(--bg-color);
-    color: #fff;
+.card-btn:hover {
+  background-color: var(--bg-color);
+  color: #fff;
 }

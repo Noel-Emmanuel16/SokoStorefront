@@ -1,16 +1,15 @@
 import React from "react";
-
-// Components
 import emoji from "../images/emoji.jpg";
 
-function Products() {
+function EmptyStateDesktop() {
   return (
-    <div className="bag">
-      <img src={emoji} alt="sad emoji" />
+    <div className="empty">
+      <img src={emoji} alt="" />
       <h2>It's empty here</h2>
       <p>Start shopping to add items to your bag</p>
+      <button>Back to homepage</button>
     </div>
   );
 }
 
-export default Products;
+export default EmptyStateDesktop;

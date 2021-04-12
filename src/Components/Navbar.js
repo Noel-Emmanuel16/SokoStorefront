@@ -2,6 +2,7 @@ import React from "react";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { IoPersonOutline } from "react-icons/io5";
 import { AiOutlineShop } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -25,12 +26,16 @@ function Navbar() {
   );
 }
 
-function NavIcon({ icon, label }) {
+function NavIcon({ icon, label,active }) {
   return (
-    <div className="nav-icon">
+    <Link
+      className={`sidebarOption  ${active && "sidebarOption--active"}`}
+      to="/empty"
+      className="nav-icon"
+    >
       <div>{icon}</div>
       <div>{label}</div>
-    </div>
+    </Link>
   );
 }
 export default Navbar;
