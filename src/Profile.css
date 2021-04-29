@@ -1,0 +1,104 @@
+.account {
+  border: 1px solid red;
+  position: relative;
+  margin-top: 13.5rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 70vh;
+  border-radius: 5px;
+  border: 1px solid #dfdfdf;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.account aside {
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  flex: 0.5;
+  min-height: 70vh;
+  border-right: 1px solid #dfdfdf;
+}
+
+.account main {
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  flex: auto;
+  min-height: 70vh;
+}
+
+.account main div:nth-child(1) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.account main div:nth-child(1) > h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.account main div:nth-child(1) > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  border: 2px solid #dfdfdf;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.account main div:nth-child(1) > button > span {
+  font-size: 1.6rem;
+  color: #333;
+  margin: 1rem;
+}
+
+.account main .orders {
+  width: 70%;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.account main .orders .order {
+  width: 300px;
+  border: 2px solid #dfdfdf;
+  border-radius: 5px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.account main .orders .order > p{
+    margin: 1rem;
+}
+
+.account main .orders .order > div{
+    margin: 1rem;
+    color: orangered;
+    display: flex;
+    align-items: center;
+}
+
+.account main .orders .order > div > .dot{
+    width: 10px;
+    height: 10px;
+    background-color: orangered;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.account main .orders .order > .avatar{
+    width: 60px;
+    height: 60px;
+    color: #dfdfdf;
+    background-color: orangered;
+    border-radius: 50%;
+    text-align: center;
+}
