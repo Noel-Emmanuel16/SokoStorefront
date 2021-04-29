@@ -10,7 +10,7 @@ function Card({ img, name, price }) {
         <div className="card-details">
           <h2>{name}</h2>
           <p>{price}</p>
-          <Link to="/product?query=woodbench">Product details</Link>
+          <Link to="/product?query=woodbench">More Details</Link>
         </div>
       </div>
       <button className="card-btn">+ Add</button>
